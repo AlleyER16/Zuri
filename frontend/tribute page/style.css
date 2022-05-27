@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+*{
+    font-family: 'Didact Gothic', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+blockquote{
+    border-top: 1px solid #dfe3ed;
+    border-right: 1px solid #dfe3ed;
+    border-bottom: 1px solid #dfe3ed;
+    border-left: 4px solid #dfe3ed;
+    padding: 10px;
+}
+
+a{
+    color: black;
+}
+
+.link{
+    background-color: #4f4e4d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+header{
+    width: 100%;
+    background-color: #4f4e4d;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+header > h1{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+main{
+    width: 75%;
+    margin: auto;
+}
+
+section{
+    display: inline-flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+article{
+    width: 70%;
+}
+
+aside{
+    width: 30%;
+    text-align: center;
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+@media only screen and (max-width: 1200px){
+    aside{
+        position: relative;
+    }
+    main{
+        width: 90%;
+    }
+    section{
+        display: block;
+    }
+    aside{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+}
