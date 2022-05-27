@@ -1,17 +1,31 @@
+from sys import exit
+
 class Student:
     # [assignment] Skeleton class. Add your code here
     def __init__(self, name, age, tracks, score):
         self.name = name
-        self.age = age
+        
+        try:
+            self.age = int(age)
+        except:
+            print(f"{age} is not a valid integer"); exit()
+
         self.tracks = tracks
-        self.score = score
+
+        try:
+            self.score = float(score)
+        except:
+            print(f"{score} is not a valid float"); exit()
 
     def change_name(self, new_name):
         self.name = new_name
         print(f"Your new name is {self.name}")
 
     def change_age(self, new_age):
-        self.age = new_age
+        try:
+            self.age = int(new_age)
+        except:
+            print(f"{new_age} not a valid integer"); exit()
         print(f"Hello {self.name}, Your new age is {self.age}")
     
     def add_track(self, new_track):
