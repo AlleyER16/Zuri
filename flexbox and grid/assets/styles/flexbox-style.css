@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: block;
+    width: 60%;
+}
+
+.cards_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.br_style1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.br_style2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card{
+    width: 100%;
+    padding: 30px;
+}
+
+.card > img{
+    margin-bottom: 10px;
+}
+
+.card > h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+.card > p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.card > button{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 28px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.card > button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedan > button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%); 
+}
+
+.suv > button{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury > button{
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 420px){
+    main{
+        height: auto;
+        display: block;
+        padding: 20px;
+        position: relative;
+    }
+    .content{
+        width: 100%;
+    }
+    .cards_container{
+        flex-direction: column;
+    }
+    .br_style1{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+    .br_style2{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+}

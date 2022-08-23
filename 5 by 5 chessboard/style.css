@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+/* For Icons */
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+main{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.board{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #646666;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.block{
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black{
+    background-color: #9ca1a1;
+}
+
+.white{
+    background-color: white;
+}

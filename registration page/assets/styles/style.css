@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+main{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: block;
+    width: 80%;
+}
+
+.flex-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.info-div{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.info-header{
+    line-height: 100%;
+    font-size: 50px;
+}
+
+.form-div{
+    width: 100%;
+}
+
+.alert{
+    color: white;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+}
+
+.form-card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.input-section{
+    padding: 10px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+}
+
+.input-section > input{
+    border: none;
+    float: left;
+    width: 90%;
+    outline: none;
+    color: hsl(249, 10%, 26%);
+}
+
+.input-section > img{
+    width: 15px;
+    height: 15px;
+    visibility: hidden;
+}
+
+.input-validation{
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    margin-top: 2px;
+    font-style: italic;
+    display: none;
+}
+
+.invalid > .input-validation{
+    display: block;
+}
+
+.invalid > .input-section{
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.invalid > .input-section > img{
+    visibility: visible;
+}
+
+.invalid > .input-section > input{
+    color: hsl(0, 100%, 74%);
+}
+
+button[type="submit"] {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-footer{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: hsl(246, 25%, 77%);
+}
+
+.form-footer > span{
+    color:hsl(0, 100%, 74%);
+}
+
+@media only screen and (max-width: 420px){
+    main{
+        position: relative;
+        display: block;
+        padding: 20px;
+        height: auto;
+        background-image: url("../images/bg-intro-mobile.png");
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .content{
+        width: 100%;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .info-header{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .info-text{
+        text-align: center;
+    }
+}

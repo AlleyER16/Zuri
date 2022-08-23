@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="https://kit.fontawesome.com/8170c5faf0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3 class="navbar-brand">Portfolio</h3>
+            <div class="social-links">
+                <a href="https://twitter.com/rehobothmd" target="_new"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/rehobothmd/" target="_new"><i class="fa fa-instagram"></i></a>
+                <a href="https://wa.me/2349073193054?text=I%20want%20to%20hire%20you" target="_new"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/micah-daniels-rehoboth-468823217/" target="_new"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="login.html" class="nav-btn ml-30">Login</a>
+                <a href="register.html" class="nav-btn">Register</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="breadcrumb">
+            <h1>Register</h1>
+            <p>Home | Register</p>
+        </section>
+        <section class="p-50">
+            <h1 class="text-center">Register</h1>
+            <p class="text-center">Create an account</p>
+            <div class="register-div">
+                <form>
+                    <div class="row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" name="first_name" placeholder="Enter first name" class="r-form" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" name="last_name" placeholder="Enter last name" class="r-form" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select name="gender" class="r-form" required>
+                                <option value="">-- Select Gender --</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label>Country</label>
+                            <input type="text" name="country" placeholder="Enter country" class="r-form" required/>
+                        </div>
+                        <div>
+                            <label>State/Province</label>
+                            <input type="text" name="state" placeholder="Enter state" class="r-form" required/>
+                        </div>
+                        <div>
+                            <label>Phone</label>
+                            <input type="text" name="phone" placeholder="Enter telephone number" class="r-form" required/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label>Email Address</label>
+                            <input type="email" name="email_address" placeholder="Enter email address" class="r-form" required/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="Enter password" class="r-form" required/>
+                        </div>
+                        <div>
+                            <label>Confirm Password</label>
+                            <input type="password" name="confirm_password" placeholder="Confirm password" class="r-form" required/>
+                        </div>
+                    </div>
+                    <div class="m-10">
+                        <button type="submit" class="custom-btn1 w-100 br-0">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Rehoboth Micah-Daniels Portfolio | @copy 2021 | ZURI & I4G
+    </footer>
+</body>
+</html>
